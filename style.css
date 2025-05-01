@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+[data-role="header"] {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+[data-role="header"] h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Footer Styles */
+[data-role="footer"] {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigation Bar */
+nav[data-role="navbar"] ul {
+    background-color: #003366;
+}
+
+nav[data-role="navbar"] ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Button Styles */
+.ui-btn {
+    background-color: #0073e6;
+    color: white;
+    border-radius: 5px;
+}
+
+.ui-btn:hover {
+    background-color: #005bb5;
+}
+
+/* Listview Styles */
+.ui-listview li {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: white;
+}
+
+.ui-listview li h3 {
+    font-size: 1.2em;
+    color: #004080;
+}
+
+.ui-listview li p {
+    font-size: 0.9em;
+    color: #666666;
+}
+
+/* Social Sidebar */
+.social-sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.social-sidebar a {
+    display: block;
+    color: white;
+    background-color: #0073e6;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-sidebar a:hover {
+    background-color: #005bb5;
+}
