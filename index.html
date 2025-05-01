@@ -4,23 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JTMK Landing Page</title>
+    <!-- Include jQuery Mobile Framework -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #0073e6;
+            color: white;
+        }
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .main-content h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .main-content p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .main-content .projects-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #0073e6;
+            background-color: white;
+            border-radius: 25px;
+        }
+        .main-content .projects-btn:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
+    <!-- Social Media Sidebar -->
     <div class="social-sidebar">
-        <a href="#" title="LinkedIn">LinkedIn</a>
-        <a href="#" title="GitHub">Github</a>
-        <a href="#" title="Twitter">Twitter</a>
-        <a href="#" title="YouTube">Youtube</a>
-        <a href="#" title="Instagram">Instagram</a>
+        <a href="#" title="LinkedIn">🔗</a>
+        <a href="#" title="GitHub">💻</a>
+        <a href="#" title="Twitter">🐦</a>
+        <a href="#" title="YouTube">📹</a>
+        <a href="#" title="Instagram">📸</a>
     </div>
 
+    <!-- Page: Home -->
     <div data-role="page" id="home">
         <div data-role="header" data-position="fixed">
-            <h1>JTMK</h1>
+            <img src="JTMK.jpeg" alt="JTMK Logo" style="float: left; max-height: 50px;">
+            <h1 style="text-align: center;">JABATAN TEKNOLOGI MAKLUMAT & KOMUNIKASI</h1>
             <nav data-role="navbar">
                 <ul>
                     <li><a href="#home" class="ui-btn-active">Home</a></li>
@@ -30,10 +63,10 @@
                 </ul>
             </nav>
         </div>
-        <div data-role="main" class="ui-content">
+        <div data-role="main" class="main-content">
             <h2>HEY, MY NAME IS JTMK</h2>
-            <p>JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses at Seberang Perai Polytechnic (PSP).</p>
-            <a href="projects.html" class="ui-btn ui-btn-b">View Projects</a>
+            <p>JTMK is the Department of Information and Communication Technology (JTMK) offering DDT courses (Diploma in Information Technology (Digital Technology)) at Seberang Perai Polytechnic (PSP).</p>
+            <a href="projects.html" class="projects-btn">PROJECTS</a>
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>Copyright © DDT4x S2 2024/2025. All rights reserved.</h4>

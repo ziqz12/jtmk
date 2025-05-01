@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - JTMK</title>
+    <!-- Include jQuery Mobile Framework -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .team-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .team-section h2 {
+            font-size: 2.5rem;
+            color: #004080;
+        }
+        .team-list {
+            margin-top: 30px;
+        }
+        .team-list img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .team-list h3 {
+            font-size: 1.2rem;
+            color: #004080;
+        }
+        .team-list p {
+            font-size: 1rem;
+            color: #666666;
+        }
+    </style>
 </head>
 <body>
+  
+    <!-- Page: About -->
     <div data-role="page" id="about">
         <div data-role="header" data-position="fixed">
-            <h1>About Us</h1>
+            <img src="JTMK.jpeg" alt="JTMK Logo" style="float: left; max-height: 50px;">
+            <h1 style="text-align: center;">About Us</h1>
             <nav data-role="navbar">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
@@ -22,28 +54,32 @@
                 </ul>
             </nav>
         </div>
-        <div data-role="main" class="ui-content">
-            <h2>Our Team</h2>
-            <ul data-role="listview" data-inset="true">
-                <li><img src="haziq.jpeg" alt="Head of Department" class="ui-li-thumb">
+        <div data-role="main" class="team-section">
+            <h2>Meet Our Team</h2>
+            <ul class="team-list" data-role="listview" data-inset="true">
+                <li>
+                    <img src="haziq.jpeg" alt="Head of Department">
                     <h3>Haziq Hakimi</h3>
                     <p>Head of Department</p>
-                    <p>Contact: 01976725312</p>
+                    <p>Contact: +123 456 7890</p>
                 </li>
-                <li><img src="chon.jpg" alt="Program Head (Software Track)" class="ui-li-thumb">
+                <li>
+                    <img src="chon.jpg" alt="Program Head (Software Track)">
                     <h3>Muhammad Hazimi</h3>
                     <p>Program Head (Software Track)</p>
-                    <p>Contact: 012893816222</p>
+                    <p>Contact: +987 654 3210</p>
                 </li>
-                <li><img src="juan.jpg" alt="Program Head (Network Track)" class="ui-li-thumb">
+                <li>
+                    <img src="juan.jpg" alt="Program Head (Network Track)">
                     <h3>Juani Uzayr</h3>
                     <p>Program Head (Network Track)</p>
-                    <p>Contact: 01288734212</p>
+                    <p>Contact: +456 789 1234</p>
                 </li>
-                <li><img src="aiz.jpg" alt="Program Head (Data Track)" class="ui-li-thumb">
-                    <h3>Zulfadlin Aizat</h3>
+                <li>
+                    <img src="aiz.jpg" alt="Program Head (Data Track)">
+                    <h3>Zulfadzlin Aizat</h3>
                     <p>Program Head (Data Track)</p>
-                    <p>Contact: 01234432637</p>
+                    <p>Contact: +321 654 9870</p>
                 </li>
             </ul>
         </div>

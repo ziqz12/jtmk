@@ -6,15 +6,58 @@
     <title>Contact Us - JTMK</title>
     <!-- Include jQuery Mobile Framework -->
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .contact-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .contact-section h2 {
+            font-size: 2.5rem;
+            color: #004080;
+        }
+        .contact-list {
+            margin-top: 30px;
+        }
+        .contact-list a {
+            display: block;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        .contact-list .call {
+            background-color: #0073e6;
+        }
+        .contact-list .call:hover {
+            background-color: #005bb5;
+        }
+        .contact-list .email {
+            background-color: #28a745;
+        }
+        .contact-list .email:hover {
+            background-color: #1e7d32;
+        }
+        .contact-list .whatsapp {
+            background-color: #25d366;
+        }
+        .contact-list .whatsapp:hover {
+            background-color: #1cba4e;
+        }
+    </style>
 </head>
 <body>
     <!-- Page: Contact -->
     <div data-role="page" id="contact">
         <div data-role="header" data-position="fixed">
-            <h1>Contact Us</h1>
+            <img src="JTMK.jpeg" alt="JTMK Logo" style="float: left; max-height: 50px;">
+            <h1 style="text-align: center;">Contact Us</h1>
             <nav data-role="navbar">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
@@ -24,20 +67,13 @@
                 </ul>
             </nav>
         </div>
-        <div data-role="main" class="ui-content">
+        <div data-role="main" class="contact-section">
             <h2>Get in Touch</h2>
-            <p>Contact us through the following methods:</p>
-            <ul data-role="listview" data-inset="true">
-                <li>
-                    <a href="tel:+1234567890" class="ui-btn ui-btn-icon-left ui-icon-phone">Call Us: +123 456 7890</a>
-                </li>
-                <li>
-                    <a href="mailto:info@jtmk.edu" class="ui-btn ui-btn-icon-left ui-icon-mail">Email Us: info@jtmk.edu</a>
-                </li>
-                <li>
-                    <a href="https://wa.me/1234567890" target="_blank" class="ui-btn ui-btn-icon-left ui-icon-comment">WhatsApp Us</a>
-                </li>
-            </ul>
+            <div class="contact-list">
+                <a href="tel:+1234567890" class="call">Call Us: +123 456 7890</a>
+                <a href="mailto:info@jtmk.edu" class="email">Email Us: info@jtmk.edu</a>
+                <a href="https://wa.me/1234567890" target="_blank" class="whatsapp">WhatsApp Us</a>
+            </div>
         </div>
         <div data-role="footer" data-position="fixed">
             <h4>Copyright © DDT4x S2 2024/2025. All rights reserved.</h4>

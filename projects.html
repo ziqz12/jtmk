@@ -5,14 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - JTMK</title>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .projects-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .projects-section h2 {
+            font-size: 2.5rem;
+            color: #004080;
+        }
+        .projects-list {
+            margin-top: 30px;
+        }
+        .projects-list img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .projects-list h3 {
+            font-size: 1.2rem;
+            color: #004080;
+        }
+        .projects-list p {
+            font-size: 1rem;
+            color: #666666;
+        }
+        .projects-list .report-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: #0073e6;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .projects-list .report-btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
 </head>
 <body>
     <div data-role="page" id="projects">
         <div data-role="header" data-position="fixed">
-            <h1>Projects</h1>
+            <img src="JTMK.jpeg" alt="JTMK Logo" style="float: left; max-height: 50px;">
+            <h1 style="text-align: center;">Projects</h1>
             <nav data-role="navbar">
                 <ul>
                     <li><a href="index.html#home">Home</a></li>
@@ -22,26 +65,26 @@
                 </ul>
             </nav>
         </div>
-        <div data-role="main" class="ui-content">
+        <div data-role="main" class="projects-section">
             <h2>Our Projects</h2>
-            <ul data-role="listview" data-inset="true">
+            <ul class="projects-list" data-role="listview" data-inset="true">
                 <li>
-                    <img src="images/project1.jpg" alt="Project 1" class="ui-li-thumb">
+                    <img src="project1.jpg" alt="Project 1">
                     <h3>Project 1: Web Design</h3>
                     <p>A comprehensive website design project.</p>
-                    <a href="docs/project1.pdf" target="_blank" class="ui-btn ui-btn-b">View Report</a>
+                    <button class="report-btn">View Report</button>
                 </li>
                 <li>
-                    <img src="images/project2.jpg" alt="Project 2" class="ui-li-thumb">
+                    <img src="project2.png" alt="Project 2">
                     <h3>Project 2: Mobile App</h3>
                     <p>Developed a mobile app using modern frameworks.</p>
-                    <a href="docs/project2.pdf" target="_blank" class="ui-btn ui-btn-b">View Report</a>
+                    <button class="report-btn">View Report</button>
                 </li>
                 <li>
-                    <img src="images/project3.jpg" alt="Project 3" class="ui-li-thumb">
+                    <img src="project3.png" alt="Project 3">
                     <h3>Project 3: Networking</h3>
                     <p>Implemented a secure network for a small business.</p>
-                    <a href="docs/project3.pdf" target="_blank" class="ui-btn ui-btn-b">View Report</a>
+                    <button class="report-btn">View Report</button>
                 </li>
             </ul>
         </div>
